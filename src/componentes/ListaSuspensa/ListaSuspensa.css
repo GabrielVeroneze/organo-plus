@@ -12,6 +12,10 @@
 }
 
 .lista__menu {
+    appearance: none;
+    background-image: url('../../../public/imagens/arrow_drop_down.svg');
+    background-position: calc(100% - 22px) center;
+    background-repeat: no-repeat;
     border: none;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
@@ -19,4 +23,6 @@
     line-height: 20px;
     padding: 1.875rem 1.375rem;
     width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
