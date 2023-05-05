@@ -1,0 +1,22 @@
+.lista {
+    color: #212121;
+    margin-bottom: 1.5rem;
+}
+
+.lista__label {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 0.5rem;
+}
+
+.lista__menu {
+    border: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 1.875rem 1.375rem;
+    width: 100%;
+}
