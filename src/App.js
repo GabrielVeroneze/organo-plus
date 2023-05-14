@@ -6,14 +6,15 @@ function App() {
 
     const [colaboradores, setColaboradores] = useState([]) 
 
-    function teste(colaborador) {
+    function aoNovoColaboradorCadastrado(colaborador) {
         console.log(colaborador);
+        setColaboradores([...colaboradores, colaborador])
     }
 
     return (
         <div className="App">
             <Banner />
-            <Formulario aoColaboradorCadastrado={colaboradores => teste(colaboradores)}/>
+            <Formulario aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}/>
         </div>
   );
 }

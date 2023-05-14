@@ -5,7 +5,6 @@ import Botao from '../Botao'
 import { useState } from 'react'
 
 const Formulario = (props) => {
-    // console.log(props.aoColaboradorCadastrado);
 
     const times = [
         'Programação',
