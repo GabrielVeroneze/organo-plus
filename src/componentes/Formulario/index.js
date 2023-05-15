@@ -4,6 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 import { useState } from 'react'
 
+// Um componente que representa o formulário para inserção de dados do novo colaborador
 const Formulario = (props) => {
 
     const times = [
@@ -16,6 +17,7 @@ const Formulario = (props) => {
         'Inovação e Gestão'
     ]
 
+    // Quatro variáveis de estado criadas para cada input de 'nome', 'cargo', 'imagem' e 'time'
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')

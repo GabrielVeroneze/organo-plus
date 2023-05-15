@@ -1,5 +1,6 @@
 import './CampoTexto.css'
 
+// Um componente de entrada de texto que é usado pelo formulário
 const CampoTexto = (props) => {
 
     const aoDigitado = (evento) => {
