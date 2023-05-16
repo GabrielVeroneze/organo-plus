@@ -23,8 +23,11 @@ const Formulario = (props) => {
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
 
+    // Essa função será executada quando o usuário dar 'submit' no formulário, clicando no botão 'Criar Card'
     const aoSalvar = (evento) => {
+        // Impede o comportamento padrão do evento 'submit', que é recarregar a página.
         evento.preventDefault()
+        
         props.aoColaboradorCadastrado({
             nome,
             cargo,
