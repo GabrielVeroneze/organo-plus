@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
+import Time from './componentes/Time';
 
 // O componente principal que importa e renderiza os outros componentes
 function App() {
@@ -21,6 +22,9 @@ function App() {
                 // Passa uma função como propriedade para o componente 'Formulario', chamada 'aoColaboradorCadastrado', que é usada para atualizar o estado de colaboradores
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
+            <Time nome="Programação" />
+            <Time nome="Front-End" />
+            <Time nome="Data Science" />
         </div>
   );
 }
