@@ -7,17 +7,14 @@
     color: #212121;
     font-size: 2rem;
     line-height: 43px;
-    margin: 0 0 2.625rem 0;
+    margin: 0 0 0.5rem 0;
 }
 
-.time__titulo::after {
-    content: '';
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 0.5rem;
-    width: 32px;
+.time__sublinhado {
     height: 4px;
-    background-color: #57C278;
+    left: 50%;
+    margin-bottom: 2.625rem;
+    position: relative;
+    transform: translateX(-50%);
+    width: 32px;
 }
