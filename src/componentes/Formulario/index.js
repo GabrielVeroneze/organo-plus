@@ -7,15 +7,6 @@ import { useState } from 'react'
 // Um componente que representa o formulário para inserção de dados do novo colaborador
 const Formulario = (props) => {
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
 
     // Quatro variáveis de estado criadas para cada input de 'nome', 'cargo', 'imagem' e 'time'
     const [nome, setNome] = useState('')
@@ -63,7 +54,7 @@ const Formulario = (props) => {
                 <ListaSuspensa 
                     obrigatorio={true}
                     label='Time' 
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
