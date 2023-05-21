@@ -1,25 +1,27 @@
 .colaborador {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    /* Não esta funcionando */
     border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     display: inline-block;
     max-width: 262px;
+    overflow: hidden;
 }
 
-.colaborador__destaque {
-    background-image: linear-gradient(#57C278 91px, #FFFFFF 69px);
-    padding-top: 2.5rem;
+.colaborador__cabecalho {
+    background-color: #57C278;
+    height: 91px;
 }
 
 .colaborador__imagem {
     border-radius: 50%;
+    bottom: -2.5rem;
     height: auto;
     max-width: 120px;
+    position: relative;
 }
 
-.colaborador__info {
+.colaborador__rodape {
     background-color: #FFFFFF;
-    padding: 0 1.875rem 1.625rem;
+    padding: 4.3125rem 1.875rem 1.625rem;
 }
 
 .colaborador__nome {
@@ -27,7 +29,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 22px;
-    margin: 0 0 0.625rem 0;
+    margin: 1.125rem 0 0.375rem 0;
 }
 
 .colaborador__cargo {

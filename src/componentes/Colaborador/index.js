@@ -4,10 +4,10 @@ const Colaborador = () => {
     
     return (
         <div className='colaborador'>
-            <div className='colaborador__destaque'>
+            <div className='colaborador__cabecalho'>
                 <img className='colaborador__imagem' src="https://github.com/viniciosneves.png" alt="" />
             </div>
-            <div className='colaborador__info'>
+            <div className='colaborador__rodape'>
                 <h4 className='colaborador__nome'>Gabriel Veroneze</h4>
                 <h5 className='colaborador__cargo'>Desenvolvedor Python e JavaScript na Alura</h5>
             </div>
