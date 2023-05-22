@@ -18,7 +18,7 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         // Impede o comportamento padrão do evento 'submit', que é recarregar a página.
         evento.preventDefault()
-        
+        //  Função que é passada como propriedade para o componente Formulario, recebe como parâmetro um objeto com as informações do novo colaborador cadastrado
         props.aoColaboradorCadastrado({
             nome,
             cargo,
@@ -35,27 +35,35 @@ const Formulario = (props) => {
                     obrigatorio={true} 
                     label='Nome' 
                     placeholder='Digite seu nome'
-                    valor={nome} // Esse 'valor' é uma propriedade passada como prop para o componente
-                    aoAlterado={valor => setNome(valor)} // Esse 'valor' é um parâmetro da função que é passada para a propriedade 'aoAlterado'
+                    // O valor atual da variável de estado 'nome' é passado para o componente 'CampoTexto'
+                    valor={nome}
+                    // Uma função callback que recebe um novo valor, em seguida, a função 'setNome' é chamada para atualizar o estado 'nome' com o novo valor
+                    aoAlterado={valor => setNome(valor)}
                 />
                 <CampoTexto
                     obrigatorio={true} 
                     label='Cargo' 
                     placeholder='Digite seu cargo'
+                    // O valor atual da variável de estado 'cargo' é passado para o componente 'CampoTexto'
                     valor={cargo}
+                    // Uma função callback que recebe um novo valor, em seguida, a função 'setCargo' é chamada para atualizar o estado 'cargo' com o novo valor
                     aoAlterado={valor => setCargo(valor)}
                 />
                 <CampoTexto
                     label='Imagem'
                     placeholder='Informe o endereço da imagem' 
+                    // O valor atual da variável de estado 'imagem' é passado para o componente 'CampoTexto'
                     valor={imagem}
+                    // Uma função callback que recebe um novo valor, em seguida, a função 'setImagem' é chamada para atualizar o estado 'imagem' com o novo valor
                     aoAlterado={valor => setImagem(valor)}
                 />
                 <ListaSuspensa 
                     obrigatorio={true}
                     label='Time' 
                     itens={props.times}
+                    // O valor atual da variável de estado 'time' é passado para o componente 'ListaSuspensa'
                     valor={time}
+                    // Uma função callback que recebe um novo valor, em seguida, a função 'setTime' é chamada para atualizar o estado 'time' com o novo valor
                     aoAlterado={valor => setTime(valor)}
                 />
                 <Botao>
