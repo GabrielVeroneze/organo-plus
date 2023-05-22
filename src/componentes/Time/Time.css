@@ -18,3 +18,11 @@
     transform: translateX(-50%);
     width: 32px;
 }
+
+.time__colaboradores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 0 5rem;
+}
