@@ -1,9 +1,9 @@
 .colaborador {
+    background-color: #FFFFFF;
     border-radius: 10px; 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    display: inline-block;
-    max-width: 262px;
     overflow: hidden;
+    width: 262px;
 }
 
 .colaborador__cabecalho {
@@ -20,7 +20,6 @@
 }
 
 .colaborador__rodape {
-    background-color: #FFFFFF;
     padding: 4.3125rem 1.875rem 1.625rem;
 }
 
