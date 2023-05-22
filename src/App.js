@@ -61,9 +61,17 @@ function App() {
                 // Passa uma função como propriedade para o componente 'Formulario', chamada 'aoColaboradorCadastrado', que é usada para atualizar o estado de colaboradores
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
-            {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} />)}
+            {times.map(time => (
+                <Time 
+                    key={time.nome}
+                    nome={time.nome}
+                    corPrimaria={time.corPrimaria}
+                    corSecundaria={time.corSecundaria}
+                    colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+                />
+            ))}
         </div>
-  );
+    );
 }
 
 export default App;
