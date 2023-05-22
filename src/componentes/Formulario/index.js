@@ -37,7 +37,7 @@ const Formulario = (props) => {
                     placeholder='Digite seu nome'
                     // O valor atual da variável de estado 'nome' é passado para o componente 'CampoTexto'
                     valor={nome}
-                    // Uma função callback que recebe um novo valor, em seguida, a função 'setNome' é chamada para atualizar o estado 'nome' com o novo valor
+                    // Passa uma função como propriedade para o componente 'CampoTexto', chamada 'aoAlterado', que é usada para atualizar o estado 'nome'
                     aoAlterado={valor => setNome(valor)}
                 />
                 <CampoTexto
@@ -46,7 +46,7 @@ const Formulario = (props) => {
                     placeholder='Digite seu cargo'
                     // O valor atual da variável de estado 'cargo' é passado para o componente 'CampoTexto'
                     valor={cargo}
-                    // Uma função callback que recebe um novo valor, em seguida, a função 'setCargo' é chamada para atualizar o estado 'cargo' com o novo valor
+                    // Passa uma função como propriedade para o componente 'CampoTexto', chamada 'aoAlterado', que é usada para atualizar o estado 'cargo'
                     aoAlterado={valor => setCargo(valor)}
                 />
                 <CampoTexto
@@ -54,7 +54,7 @@ const Formulario = (props) => {
                     placeholder='Informe o endereço da imagem' 
                     // O valor atual da variável de estado 'imagem' é passado para o componente 'CampoTexto'
                     valor={imagem}
-                    // Uma função callback que recebe um novo valor, em seguida, a função 'setImagem' é chamada para atualizar o estado 'imagem' com o novo valor
+                    // Passa uma função como propriedade para o componente 'CampoTexto', chamada 'aoAlterado', que é usada para atualizar o estado 'imagem'
                     aoAlterado={valor => setImagem(valor)}
                 />
                 <ListaSuspensa 
@@ -63,7 +63,7 @@ const Formulario = (props) => {
                     itens={props.times}
                     // O valor atual da variável de estado 'time' é passado para o componente 'ListaSuspensa'
                     valor={time}
-                    // Uma função callback que recebe um novo valor, em seguida, a função 'setTime' é chamada para atualizar o estado 'time' com o novo valor
+                    // Passa uma função como propriedade para o componente 'ListaSuspensa', chamada 'aoAlterado', que é usada para atualizar o estado 'time'
                     aoAlterado={valor => setTime(valor)}
                 />
                 <Botao>

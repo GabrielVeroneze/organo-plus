@@ -58,7 +58,7 @@ function App() {
             <Banner />
             <Formulario 
                 times={times.map(time => time.nome)}
-                // Passa uma função como propriedade para o componente 'Formulario', chamada 'aoColaboradorCadastrado', que é usada para atualizar o estado de colaboradores
+                // Passa uma função como propriedade para o componente 'Formulario', chamada 'aoColaboradorCadastrado', que é usada para atualizar o estado de 'colaboradores'
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
             {times.map(time => (
