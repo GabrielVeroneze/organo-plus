@@ -1,0 +1,32 @@
+.rodape {
+    background-color: #6278F7;
+    background-image: url('../../../public/imagens/fundo.png');
+    display: flex;
+    justify-content: center;
+    padding: 4.6875rem 5rem;
+}
+
+.rodape__caixa {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    width: 100%;
+}
+
+.rodape__social {
+    display: flex;
+    gap: 2.125rem;
+}
+
+.rodape__logo {
+    height: auto;
+    width: 166px;
+}
+
+.rodape__creditos {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    /* font-weight: 500; */
+    line-height: 24px;
+}
