@@ -18,6 +18,7 @@ const ListaSuspensa = (props) => {
                 className="lista__menu"
                 required={props.obrigatorio}
             >
+                <option value=""></option>
                 {props.itens.map(item => (
                     // Cria os elementos <option> dentro do <select>, com base nos itens passados através da propriedade 'itens' do componente 'ListaSuspensa'
                     <option key={item}>{item}</option>

@@ -49,7 +49,6 @@ function App() {
 
     // Recebe os dados do novo colaborador que foram inseridos no formulário.
     function aoNovoColaboradorCadastrado(colaborador) {
-        console.log(colaborador);
         //  Cria um novo array a partir do array 'colaboradores' atual e adiciona o novo colaborador no final
         setColaboradores([...colaboradores, colaborador])
     }
