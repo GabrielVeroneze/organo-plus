@@ -5,6 +5,7 @@
 
 .time__titulo {
     color: #212121;
+    font-family: var(--fonte-titulo);
     font-size: 2rem;
     line-height: 43px;
     margin: 0 0 0.5rem 0;

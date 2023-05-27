@@ -5,6 +5,7 @@
 
 .campo-texto__label {
     display: block;
+    font-family: var(--fonte-texto);
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 22px;
@@ -23,4 +24,5 @@
 
 .campo-texto__input::placeholder {
     color: #AFAFAF;
+    font-family: var(--fonte-texto);
 }
