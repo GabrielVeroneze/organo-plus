@@ -45,6 +45,7 @@ function App() {
         }
     ]
 
+    // Declara o estado 'colaboradores', inicializa o estado colaboradores com um array vazio (o array vazio indica que inicialmente não há colaboradores cadastrados)
     const [colaboradores, setColaboradores] = useState([]) 
 
     // Recebe os dados do novo colaborador que foram inseridos no formulário.

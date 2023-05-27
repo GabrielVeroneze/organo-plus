@@ -1,5 +1,6 @@
 import './Colaborador.css'
 
+// O componente recebe as propriedades nome, cargo, imagem e corDeFundo por meio de um objeto desestruturado como parâmetro da função
 const Colaborador = ({nome, cargo, imagem, corDeFundo}) => {
 
     return (
