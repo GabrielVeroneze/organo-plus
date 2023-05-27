@@ -58,16 +58,19 @@ function App() {
         <div className="App">
             <Banner />
             <Formulario 
+                // Essa propriedade recebe um novo array contendo apenas os nomes dos times
                 times={times.map(time => time.nome)}
                 // Passa uma função como propriedade para o componente 'Formulario', chamada 'aoColaboradorCadastrado', que é usada para atualizar o estado de 'colaboradores'
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
             {times.map(time => (
+                // Para cada elemento do array é retornado um componente 'Time' com propriedades específicas (Cada componente 'Time' corresponderá a um elemento do array 'times')
                 <Time 
                     key={time.nome}
                     nome={time.nome}
                     corPrimaria={time.corPrimaria}
                     corSecundaria={time.corSecundaria}
+                    // Essa propriedade recebe um array filtrado de colaboradores específicos para aquele time. A função filter() é utilizada para retornar apenas os colaboradores cujo time corresponda ao 'time.nome' atual do loop
                     colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
                 />
             ))}

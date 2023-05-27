@@ -25,7 +25,7 @@ const Formulario = (props) => {
             imagem,
             time
         })
-        
+        // Limpa o formulário após adicionarmos um colaborador        
         setNome('')
         setCargo('')
         setImagem('')
