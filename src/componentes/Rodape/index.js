@@ -16,7 +16,7 @@ const Rodape = () => {
                     </li>
                 </ul>
                 <img className='rodape__logo' src="/imagens/logo.png" alt="Logo do Organo" />
-                <p className='rodape__creditos'>Desenvolvido por Alura.</p>
+                <p className='rodape__creditos'>Desenvolvido por Gabriel.</p>
             </div>
         </footer>
     )
