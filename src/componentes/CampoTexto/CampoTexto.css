@@ -26,3 +26,9 @@
 .campo-texto__input::placeholder {
     color: #AFAFAF;
 }
+
+@media screen and (max-width: 768px) {
+    .campo-texto__input {
+        padding: 1.5rem 1rem;
+    }
+}
