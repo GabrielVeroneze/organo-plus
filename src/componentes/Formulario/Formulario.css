@@ -20,4 +20,21 @@
     font-size: 2rem;
     font-weight: 400;
     line-height: 43px;
+    margin: 0 0 2.75rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        margin: 2rem 1rem;
+    }
+
+    .formulario__caixa {
+        padding: 1.5rem;
+    }
+
+    .formulario__titulo {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 }
