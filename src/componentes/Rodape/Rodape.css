@@ -9,6 +9,8 @@
 .rodape__caixa {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2.125rem;
     justify-content: space-between;
     max-width: 1120px;
     width: 100%;
@@ -30,5 +32,13 @@
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 24px;
+    margin: 0;
     max-width: 166px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .rodape__caixa {
+        justify-content: space-around;
+    }
 }
