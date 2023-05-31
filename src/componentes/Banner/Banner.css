@@ -1,8 +1,68 @@
 .banner {
     background-color: #6278F7;
-    text-align: center;
+    background-image: url('/public/imagens/duotone.png'), url('/public/imagens/fundo.png');
+    background-position: bottom right, left top;
+    background-repeat: no-repeat;
+    background-size: clamp(200px, 100%, 517px) auto, cover;
+    box-sizing: border-box;
+    display: flex;
+    height: 556px;
+    justify-content: center;
+    padding: 4.75rem 5rem;
 }
 
-.banner__imagem {
-    max-width: 100%;
+.banner__caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 8.125rem;
+    width: 1120px;
 }
+
+.banner__logo {
+    height: auto;
+    width: 190px;
+}
+
+.banner__titulo {
+    color: #212121;
+    font-family: var(--fonte-titulo);
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 72px;
+    margin: 0;
+}
+
+.banner__titulo--inferior {
+    display: block;
+    font-family: var(--fonte-texto);
+    font-size: 2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        background-image: url('/public/imagens/fundo.png');
+        background-position: left top;
+        background-size: cover;
+        height: auto;
+        padding: 2rem 2rem 4rem;
+    }
+    
+    .banner__caixa {
+        gap: 2rem;
+    }
+
+    .banner__logo {
+        width: 166px;
+    }
+
+    .banner__titulo {
+        font-size: 3rem;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .banner__titulo--inferior {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+} 
