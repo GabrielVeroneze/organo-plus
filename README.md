@@ -1,23 +1,27 @@
+<p align="center"> <img src="https://imgur.com/4b57aFn.png" alt="React: desenvolvendo com JavaScript"> </p>
 <p>Projeto desenvolvido durante o curso "React: desenvolvendo com JavaScript" da Alura.</p>
 
 <hr>
 
-<h1 align="center">AluraBooks Livros</h1>
-<p align="center">AluraBooks é uma loja virtual que oferece livros de programação para venda. A loja possui uma variedade de livros, incluindo livros de front-end, livros de back-end e livros de dados.</p>
+<h1 align="center">Organo</h1>
+<p align="center">A aplicação Organo é um organograma interativo desenvolvido em React. Desenvolvido especificamente para uma escola de cursos online, a aplicação fornece uma representação visual clara e hierárquica da estrutura de colaboradores da escola, organizando-os por times categorizados em áreas de especialização.</p>
 
-## :hammer: Funcionalidades do projeto
+## :hammer: Funcionalidades da aplicação
 
-- `Listagem de livros`: Lista todos os livros disponíveis na API, exibindo o título, descrição, imagem e preço de cada um.
+- `Criação de card do colaborador`: Cria um card de colaborador com as informações fornecidas no formulário, como nome, cargo, imagem e time. Tornando o card visualmente identificável e personalizado.
 
-- `Filtro por categoria`: Permite a filtragem dos livros por categoria, sendo elas: front-end, back-end e dados. Ao clicar em um dos botões de categoria, apenas os livros relacionados serão exibidos na tela.
+- `Upload de imagem`: Possui a opção de fazer o upload da imagem do colaborador diretamente pelo formulário.
 
-- `Filtro por disponibilidade`: Permite a filtragem dos livros por disponibilidade. Ao clicar no botão de "Livros disponíveis", apenas os livros que estão disponíveis serão exibidos.
+- `Seleção de time`: Oferece uma lista de opções de times, como programação, Front-end, Data Science, DevOps, UX e Design, Mobile e Inovação e gestão.
 
-- `Exibição do valor total`: Ao filtrar os livros disponíveis, a aplicação exibe o valor total, que apresenta o valor total de todos os livros disponíveis na lista.
-
-- `Ordenação por preço`: Possibilita a ordenação dos livros por preço, em ordem crescente.
+- `Adição do card ao organograma`: Após a criação do card do colaborador, ele é adicionado automaticamente ao organograma, no local correspondente ao seu time.
 
 ## :computer: Tecnologias e Ferramentas utilizadas
+
+
+- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"><br>
+
+
 
 - <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"><br>
     - `<button>`
