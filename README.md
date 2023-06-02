@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+<p>Projeto desenvolvido durante o curso "React: desenvolvendo com JavaScript" da Alura.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr>
 
-## Available Scripts
+<h1 align="center">AluraBooks Livros</h1>
+<p align="center">AluraBooks é uma loja virtual que oferece livros de programação para venda. A loja possui uma variedade de livros, incluindo livros de front-end, livros de back-end e livros de dados.</p>
 
-In the project directory, you can run:
+## :hammer: Funcionalidades do projeto
 
-### `npm start`
+- `Listagem de livros`: Lista todos os livros disponíveis na API, exibindo o título, descrição, imagem e preço de cada um.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `Filtro por categoria`: Permite a filtragem dos livros por categoria, sendo elas: front-end, back-end e dados. Ao clicar em um dos botões de categoria, apenas os livros relacionados serão exibidos na tela.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `Filtro por disponibilidade`: Permite a filtragem dos livros por disponibilidade. Ao clicar no botão de "Livros disponíveis", apenas os livros que estão disponíveis serão exibidos.
 
-### `npm test`
+- `Exibição do valor total`: Ao filtrar os livros disponíveis, a aplicação exibe o valor total, que apresenta o valor total de todos os livros disponíveis na lista.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `Ordenação por preço`: Possibilita a ordenação dos livros por preço, em ordem crescente.
 
-### `npm run build`
+## :computer: Tecnologias e Ferramentas utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"><br>
+    - `<button>`
+    - `<img>`
+    - `<li>`
+    - `<ul>`
+    - e outros
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"><br>
+    - `@import`
+    - `box-sizing`
+    - `flexbox`
+    - `media queries`
+    - e outros
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"><br>
+    - `async`/ `await`
+    - `filter`
+    - `forEach`
+    - `map`
+    - `operador spread`
+    - `operador ternário`
+    - `reduce`
+    - `sort`
+    - e outros
 
-### `npm run eject`
+## :open_file_folder: Acesso ao projeto
+Você pode baixar o projeto diretamente:  
+[Baixar código fonte](https://github.com/GabrielVeroneze/alura-books-livros/archive/refs/heads/main.zip)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Também é possível clonar o repositório usando o seguinte comando:
+```
+git clone https://github.com/GabrielVeroneze/alura-books-livros.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :clipboard: Instruções
+Para usar este projeto em seu computador localmente, você precisará seguir estas etapas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Certifique-se de que você tem o Node.js instalado em seu computador. Se não tiver, faça o download e a instalação a partir do [site oficial](https://nodejs.org/).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Certifique-se de que a extensão Live Server do VSCode está instalada. Se você ainda não a tem instalada, você pode baixá-la na loja de extensões do VSCode ou em [baixar Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
-## Learn More
+3. Abra o terminal e navegue até a pasta raiz do projeto usando o comando `cd` no terminal. Por exemplo:
+   ```
+   cd C:\Users\SeuUsuario\projetos\meu-projeto
+   ```
+4. Inicie o servidor JSON executando o seguinte comando no terminal:
+   ```
+   npx json-server --watch db.json
+   ```
+&nbsp; &nbsp; &nbsp; &nbsp;Este comando iniciará o servidor JSON no endereço http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Por fim, inicie o Live Server do VSCode clicando com o botão direito no arquivo `index.html` e selecionando a opção "Open with Live Server". Isso abrirá a página HTML principal.
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demonstração Visual
+`Página inicial`
+![aluraBooks](https://imgur.com/pSkyaNE.png)
 
-### Code Splitting
+`Livros de Front-End`
+![aluraBooks](https://imgur.com/S2dQ6OR.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`Livros ordenados pelo preço`
+![aluraBooks](https://imgur.com/b8dQfHe.png)
