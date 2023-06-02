@@ -1,7 +1,6 @@
 import './Banner.css'
 
 export const Banner = () => {
-    // JSX
     return (
         <header className='banner'>
             <div className='banner__caixa'>

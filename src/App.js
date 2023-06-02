@@ -4,7 +4,6 @@ import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
 import Rodape from './componentes/Rodape';
 
-// O componente principal que importa e renderiza os outros componentes
 function App() {
 
     const times = [
@@ -45,12 +44,9 @@ function App() {
         }
     ]
 
-    // Declara o estado 'colaboradores', inicializa o estado colaboradores com um array vazio (o array vazio indica que inicialmente não há colaboradores cadastrados)
     const [colaboradores, setColaboradores] = useState([]) 
 
-    // Recebe os dados do novo colaborador que foram inseridos no formulário.
     function aoNovoColaboradorCadastrado(colaborador) {
-        //  Cria um novo array a partir do array 'colaboradores' atual e adiciona o novo colaborador no final
         setColaboradores([...colaboradores, colaborador])
     }
 
@@ -58,19 +54,15 @@ function App() {
         <div className="App">
             <Banner />
             <Formulario 
-                // Essa propriedade recebe um novo array contendo apenas os nomes dos times
                 times={times.map(time => time.nome)}
-                // Passa uma função como propriedade para o componente 'Formulario', chamada 'aoColaboradorCadastrado', que é usada para atualizar o estado de 'colaboradores'
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
             {times.map(time => (
-                // Para cada elemento do array é retornado um componente 'Time' com propriedades específicas (Cada componente 'Time' corresponderá a um elemento do array 'times')
                 <Time 
                     key={time.nome}
                     nome={time.nome}
                     corPrimaria={time.corPrimaria}
                     corSecundaria={time.corSecundaria}
-                    // Essa propriedade recebe um array filtrado de colaboradores específicos para aquele time. A função filter() é utilizada para retornar apenas os colaboradores cujo time corresponda ao 'time.nome' atual do loop
                     colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
                 />
             ))}
