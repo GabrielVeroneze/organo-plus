@@ -25,7 +25,7 @@
 `Componentes Funcionais`   | `Pseudoclasses`  |
 `Desestruturação de Props` | `Responsividade` |
 `Eventos`                  | `Variáveis`      |
-`Hooks`                    | `...             |
+`Hooks`                    | `...`            |
 `JSX`                      |                  |
 `Props`                    |                  |
 `Renderização Condicional` |                  |
