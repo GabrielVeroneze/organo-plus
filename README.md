@@ -25,13 +25,13 @@
 `Componentes Funcionais`   | `Pseudoclasses`  |
 `Desestruturação de Props` | `Responsividade` |
 `Eventos`                  | `Variáveis`      |
-`Hooks`                    | <p align="center">...</p>|
+`Hooks`                    | `...             |
 `JSX`                      |                  |
 `Props`                    |                  |
 `Renderização Condicional` |                  |
 `Renderização de Listas`   |                  |
 `useState`                 |                  |
-<p align="center">...</p>  |                  |
+`...`                      |                  |
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
