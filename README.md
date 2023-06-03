@@ -18,33 +18,19 @@
 
 ## :computer: Tecnologias e Ferramentas utilizadas
 
-
-- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"><br>
-    - `children`
-    - `Componentes Controlados`
-    - `Componentes Funcionais`
-    - `Desestruturação de Props`
-    - `Eventos`
-    - `Hooks`
-    - `JSX`
-    - `Props`
-    - `Renderização Condicional`
-    - `Renderização de Listas`
-    - `useState`
-    - E muito mais!
-
-- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"><br>
-    - `Flexbox`
-    - `Media Queries`
-    - `Pseudoclasses`
-    - `Responsividade`
-    - `Variáveis`
-    - E muito mais!
-
-- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"><br>
-    - `Node Package Manager`
-    - `create-react-app`
-
+<img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> | <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+ ------------------------- | ---------------- | ----------------------
+`children`                 | `Flexbox`        | `Node Package Manager`
+`Componentes Controlados`  | `Media Queries`  | `create-react-app`
+`Componentes Funcionais`   | `Pseudoclasses`  |
+`Desestruturação de Props` | `Responsividade` |
+`Eventos`                  | `Variáveis`      |
+`Hooks`                    |                  |
+`JSX`                      |                  |
+`Props`                    |                  |
+`Renderização Condicional` |                  |
+`Renderização de Listas`   |                  |
+`useState`                 |                  |
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
