@@ -20,41 +20,39 @@
 
 
 - <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"><br>
-
-
-
-- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"><br>
-    - `<button>`
-    - `<img>`
-    - `<li>`
-    - `<ul>`
+    - `children`
+    - `Componentes Controlados`
+    - `Componentes Funcionais`
+    - `Desestruturação de Props`
+    - `Eventos`
+    - `Hooks`
+    - `JSX`
+    - `Props`
+    - `Renderização Condicional`
+    - `Renderização de Listas`
+    - `useState`
     - e outros
 
 - <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"><br>
-    - `@import`
-    - `box-sizing`
-    - `flexbox`
-    - `media queries`
+    - `Flexbox`
+    - `Media Queries`
+    - `Pseudoclasses`
+    - `Responsividade`
+    - `Variáveis`
     - e outros
 
-- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"><br>
-    - `async`/ `await`
-    - `filter`
-    - `forEach`
-    - `map`
-    - `operador spread`
-    - `operador ternário`
-    - `reduce`
-    - `sort`
-    - e outros
+- <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"><br>
+    - `Node Package Manage`
+    - `create-react-app`
+
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
-[Baixar código fonte](https://github.com/GabrielVeroneze/alura-books-livros/archive/refs/heads/main.zip)
+[Baixar código fonte](https://github.com/GabrielVeroneze/organo/archive/refs/heads/master.zip)
 
 Também é possível clonar o repositório usando o seguinte comando:
 ```
-git clone https://github.com/GabrielVeroneze/alura-books-livros.git
+git clone https://github.com/GabrielVeroneze/organo.git
 ```
 
 ## :clipboard: Instruções
