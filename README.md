@@ -31,7 +31,7 @@
     - `Renderização Condicional`
     - `Renderização de Listas`
     - `useState`
-    - e outros
+    - E muito mais!
 
 - <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"><br>
     - `Flexbox`
@@ -39,10 +39,10 @@
     - `Pseudoclasses`
     - `Responsividade`
     - `Variáveis`
-    - e outros
+    - E muito mais!
 
 - <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"><br>
-    - `Node Package Manage`
+    - `Node Package Manager`
     - `create-react-app`
 
 
@@ -60,19 +60,21 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 
 1. Certifique-se de que você tem o Node.js instalado em seu computador. Se não tiver, faça o download e a instalação a partir do [site oficial](https://nodejs.org/).
 
-2. Certifique-se de que a extensão Live Server do VSCode está instalada. Se você ainda não a tem instalada, você pode baixá-la na loja de extensões do VSCode ou em [baixar Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-
-3. Abra o terminal e navegue até a pasta raiz do projeto usando o comando `cd` no terminal. Por exemplo:
+2. Abra o terminal e navegue até a pasta raiz do projeto usando o comando `cd` no terminal. Por exemplo:
    ```
    cd C:\Users\SeuUsuario\projetos\meu-projeto
    ```
-4. Inicie o servidor JSON executando o seguinte comando no terminal:
+3. Antes de iniciar a aplicação, instale as dependências necessárias executando o seguinte comando:
    ```
-   npx json-server --watch db.json
+   npm install
    ```
-&nbsp; &nbsp; &nbsp; &nbsp;Este comando iniciará o servidor JSON no endereço http://localhost:3000.
+&nbsp; &nbsp; &nbsp; &nbsp;Isso irá instalar todas as dependências listadas no arquivo package.json.
 
-5. Por fim, inicie o Live Server do VSCode clicando com o botão direito no arquivo `index.html` e selecionando a opção "Open with Live Server". Isso abrirá a página HTML principal.
+4. Após a conclusão da instalação das dependências, inicie o servidor de desenvolvimento executando o seguinte comando:
+   ```
+   npm start
+   ```
+&nbsp; &nbsp; &nbsp; &nbsp;Isso iniciará o servidor de desenvolvimento do React e abrirá automaticamente a aplicação no seu navegador padrão. Se não abrir automaticamente, você pode acessá-la digitando `http://localhost:3000` na barra de endereço do seu navegador.
 <br>
 
 ## Demonstração Visual
