@@ -65,11 +65,11 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 <br>
 
 ## Demonstração Visual
-`Página inicial`
-![aluraBooks](https://imgur.com/pSkyaNE.png)
+`Formulário`
+![Organo](https://imgur.com/fjCFeFY.png)
 
-`Livros de Front-End`
-![aluraBooks](https://imgur.com/S2dQ6OR.png)
+`Seção de Colaboradores`
+![Organo](https://imgur.com/gapXooK.png)
 
-`Livros ordenados pelo preço`
-![aluraBooks](https://imgur.com/b8dQfHe.png)
+`Criando Colaborador`
+![Organo](https://imgur.com/F2xf4SZ.gif)
