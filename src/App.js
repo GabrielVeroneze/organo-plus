@@ -222,6 +222,10 @@ function App() {
         setColaboradores([...colaboradores, colaborador])
     }
 
+    function deletarColaborador() {
+        console.log('deletando Colaborador');
+    }
+
     return (
         <div className="App">
             <Banner />
@@ -234,6 +238,7 @@ function App() {
                     key={time.nome}
                     time={time}
                     colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+                    aoDeletar={deletarColaborador}
                 />
             ))}
             <Rodape />
