@@ -1,12 +1,9 @@
 .banner {
-    background-color: #6278f7;
-    background-image: url('/public/imagens/duotone.png'),
-        url('/public/imagens/ellipse_3.png'),
-        url('/public/imagens/polygon_2.png'),
-        url('/public/imagens/polygon_1.png'),
-        url('/public/imagens/ellipse_2.png');
-    background-position: bottom right, 29px 424px, 466px 46px, 712px 375px, 804px 20px;
+    background-color: #6278F7;
+    background-image: url('/public/imagens/duotone.png'), url('/public/imagens/fundo.png');
+    background-position: bottom right, left top;
     background-repeat: no-repeat;
+    background-size: auto, cover;
     box-sizing: border-box;
     display: flex;
     height: 556px;
@@ -68,4 +65,4 @@
         font-size: 1.5rem;
         line-height: 30px;
     }
-}
+} 
