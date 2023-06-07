@@ -3,8 +3,16 @@
     border-radius: 10px; 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     font-family: var(--fonte-texto);
-    overflow: hidden;
+    position: relative;
     width: 262px;
+}
+
+.colaborador__deletar {
+    background-color: red;
+    color: #FFFFFF;
+    position: absolute;
+    right: -10px;
+    top: -10px;
 }
 
 .colaborador__cabecalho {
