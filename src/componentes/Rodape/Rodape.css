@@ -1,6 +1,12 @@
 .rodape {
-    background-color: #6278F7;
-    background-image: url('../../../public/imagens/fundo.png');
+    background-color: #6278f7;
+    background-image: url('/public/imagens/polygon_1.png'),
+        url('/public/imagens/polygon_2.png'),
+        url('/public/imagens/ellipse_2.png'),
+        url('/public/imagens/ellipse_3.png');
+    background-position: 29px 107px, 410px 43px, 888px 25px, 1345px 122px;
+    background-repeat: no-repeat;
+    background-size: 90px, 100px, 89px, auto;
     display: flex;
     justify-content: center;
     padding: 4.6875rem 5rem;
@@ -27,7 +33,7 @@
 }
 
 .rodape__creditos {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: var(--fonte-texto);
     font-size: 1.25rem;
     font-weight: 500;
