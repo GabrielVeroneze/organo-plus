@@ -8,11 +8,11 @@
 }
 
 .colaborador__deletar {
-    background-color: red;
-    color: #FFFFFF;
+    height: 32px;
     position: absolute;
     right: -10px;
     top: -10px;
+    width: 32px;
 }
 
 .colaborador__cabecalho {
