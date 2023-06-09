@@ -1,5 +1,6 @@
 import Colaborador from '../Colaborador'
 import './Time.css'
+import hexToRgba from 'hex-to-rgba'
 
 const Time = ({time, colaboradores, aoDeletar, mudarCor}) => {
 
@@ -9,10 +10,10 @@ const Time = ({time, colaboradores, aoDeletar, mudarCor}) => {
 
     return ( 
         colaboradores.length > 0 && (
-            <section className='time' style={{backgroundColor: time.corSecundaria}}>
-                <input className='time__cor' type="color" value={time.corPrimaria} onChange={handleChange} />
+            <section className='time' style={{backgroundColor: hexToRgba(time.cor, '0.15')}}>
+                <input className='time__cor' type="color" value={time.cor} onChange={handleChange} />
                 <h3 className='time__titulo'>{time.nome}</h3>
-                <div className='time__sublinhado' style={{backgroundColor: time.corPrimaria}}></div>
+                <div className='time__sublinhado' style={{backgroundColor: time.cor}}></div>
                 <div className='time__colaboradores'>
                     {colaboradores.map((colaborador, indice) => {
                         return (
@@ -21,7 +22,7 @@ const Time = ({time, colaboradores, aoDeletar, mudarCor}) => {
                                 nome={colaborador.nome}
                                 cargo={colaborador.cargo}
                                 imagem={colaborador.imagem}
-                                corDeFundo={time.corPrimaria}
+                                corDeFundo={time.cor}
                                 aoDeletar={aoDeletar}
                             />
                         ) 
