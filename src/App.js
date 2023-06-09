@@ -6,7 +6,7 @@ import Rodape from './componentes/Rodape';
 
 function App() {
 
-    const times = [
+    const [times, setTimes] = useState([
         {
             nome: 'Programação',
             corPrimaria: '#57C278',
@@ -42,8 +42,7 @@ function App() {
             corPrimaria: '#FF8A29',
             corSecundaria: '#FFEEDF'
         }
-    ]
-
+    ])
 
     const inicial = [
         {
@@ -226,6 +225,17 @@ function App() {
         console.log('deletando Colaborador');
     }
 
+    function mudarCorDoTime(cor, nome) {
+        setTimes(
+            times.map(time => {
+                if (time.nome === nome) {
+                    time.corPrimaria = cor
+                }
+                return time
+            })
+        )
+    }
+
     return (
         <div className="App">
             <Banner />
@@ -239,6 +249,7 @@ function App() {
                     time={time}
                     colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
                     aoDeletar={deletarColaborador}
+                    mudarCor={mudarCorDoTime}
                 />
             ))}
             <Rodape />
