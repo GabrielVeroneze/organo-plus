@@ -1,6 +1,13 @@
 .time {
     padding: 2.125rem 0 2.5rem;
+    position: relative;
     text-align: center;
+}
+
+.time__cor {
+    position: absolute;
+    right: 50px;
+    top: 20px;
 }
 
 .time__titulo {
