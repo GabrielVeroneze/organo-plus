@@ -3,12 +3,14 @@ import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
 import Rodape from './componentes/Rodape';
+// Importa a função 'v4' da biblioteca 'uuid' e atribui um nome local 'uuidv4' para ela, isso permite usar 'uuidv4' no código para gerar identificadores únicos
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
     const [times, setTimes] = useState([
         {
+            // Atribui um identificador único gerado pela função 'uuidv4()' na propriedade 'id' do objeto 
             id: uuidv4(),
             nome: 'Programação',
             cor: '#57C278',
@@ -47,6 +49,7 @@ function App() {
 
     const inicial = [
         {
+            // Atribui um identificador único gerado pela função 'uuidv4()' na propriedade 'id' do objeto 
             id: uuidv4(),
             nome: 'Juliana Amoasei',
             cargo: 'Desenvolvedora de software e instrutora',
@@ -92,7 +95,7 @@ function App() {
             id: uuidv4(),
             nome: 'Guilherme Lima',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: '    https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+            imagem: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
             time: times[1].nome
         },
         {
@@ -120,7 +123,7 @@ function App() {
             id: uuidv4(),
             nome: 'Guilherme Lima',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: '    https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+            imagem: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
             time: times[2].nome
         },
         {
@@ -148,7 +151,7 @@ function App() {
             id: uuidv4(),
             nome: 'Guilherme Lima',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: '    https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+            imagem: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
             time: times[3].nome
         },
         {
@@ -176,7 +179,7 @@ function App() {
             id: uuidv4(),
             nome: 'Guilherme Lima',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: '    https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+            imagem: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
             time: times[4].nome
         },
         {
@@ -204,7 +207,7 @@ function App() {
             id: uuidv4(),
             nome: 'Guilherme Lima',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: '    https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+            imagem: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
             time: times[5].nome
         },
         {
@@ -232,7 +235,7 @@ function App() {
             id: uuidv4(),
             nome: 'Guilherme Lima',
             cargo: 'Desenvolvedor Python e JavaScript na Alura',
-            imagem: '    https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
+            imagem: 'https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
             time: times[6].nome
         },
         {
@@ -277,7 +280,9 @@ function App() {
                     key={time.nome}
                     time={time}
                     colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+                    // Passa a função 'deletarColaborador' como uma propriedade chamada 'aoDeletar' para o componente 'Time'
                     aoDeletar={deletarColaborador}
+                    // Passa a função 'mudarCorDoTime' como uma propriedade chamada 'mudarCor' para o componente 'Time'
                     mudarCor={mudarCorDoTime}
                 />
             ))}
