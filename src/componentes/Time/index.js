@@ -6,8 +6,8 @@ import hexToRgba from 'hex-to-rgba'
 const Time = ({time, colaboradores, aoDeletar, mudarCor}) => {
 
     const handleChange = (evento) => {
-        // É uma função que foi passada como props para o componente 'Time', o 1º argumento é o valor da cor (evento.target.value) e o 2º argumento é o nome do time (time.nome)
-        mudarCor(evento.target.value, time.nome)
+        // É uma função que foi passada como props para o componente 'Time', o 1º argumento é o valor da cor (evento.target.value) e o 2º argumento é o id do time (time.id)
+        mudarCor(evento.target.value, time.id)
     }
 
     return ( 
