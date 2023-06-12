@@ -12,8 +12,18 @@ const Time = ({time, colaboradores, aoDeletar, mudarCor}) => {
 
     return ( 
         colaboradores.length > 0 && (
-            <section className='time' style={{backgroundColor: hexToRgba(time.cor, '0.15')}}>
-                <input className='time__cor' type="color" value={time.cor} onChange={handleChange} />
+            <section 
+                className='time'
+                // A função 'hexToRgba' importada recebe dois argumentos, 1º o valor da cor em hexadecimal (time.cor) e o 2º valor da opacidade ('0.15')
+                style={{backgroundColor: hexToRgba(time.cor, '0.15')}}
+            >
+                <input 
+                    className='time__cor' 
+                    type='color'
+                    value={time.cor}
+                    // Quando o usuário altera a cor selecionada, a função 'handleChange' é chamada para tratar essa mudança
+                    onChange={handleChange}
+                />
                 <h3 className='time__titulo'>{time.nome}</h3>
                 <div className='time__sublinhado' style={{backgroundColor: time.cor}}></div>
                 <div className='time__colaboradores'>

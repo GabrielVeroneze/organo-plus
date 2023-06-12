@@ -258,9 +258,13 @@ function App() {
     }
 
     function mudarCorDoTime(cor, id) {
+        // Atualiza o estado do componente com o novo array de times, incluindo a alteração da cor do time específico
         setTimes(
+            // Percorre cada elemento do array 'times' e retorna um novo array com as alterações desejadas
             times.map(time => {
+                // Verifica se o 'time.id' é igual ao parâmetro 'id' passado para a função 
                 if (time.id === id) {
+                    // Se for igual, atualiza a propriedade 'cor' desse time com o valor do parâmetro 'cor', caso contrário, retornamos o próprio objeto time sem modificação
                     time.cor = cor
                 }
                 return time
