@@ -253,9 +253,13 @@ function App() {
         setColaboradores([...colaboradores, colaborador])
     }
 
+    // Recebe como parâmetro o 'id' do colaborador que deve ser removido
     function deletarColaborador(id) {
+        // Atualiza o estado da lista de 'colaboradores', removendo o colaborador com o 'id' correspondente
         setColaboradores(
+            // Filtra a lista de 'colaboradores' e cria um novo array de colaboradores
             colaboradores.filter(colaborador => {
+                // Mantém apenas os 'colaborador' que não possuem o 'id' igual ao 'id' do colaborador que deve ser removido
                 return colaborador.id !== id
             })
         )

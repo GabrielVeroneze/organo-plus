@@ -7,7 +7,7 @@ const Colaborador = ({nome, cargo, imagem, corDeFundo, aoDeletar, id}) => {
         <div className='colaborador'>
             <AiFillCloseCircle
                 className='colaborador__deletar'
-                // Atrubui a função 'aoDeletar' ao evento de clique do componente, portanto, quando o ícone for clicado, a função 'aoDeletar' será executada
+                // Atrubui a função 'aoDeletar' ao evento de clique do componente, então, quando o ícone for clicado, a função 'aoDeletar' será executada passando o id do colaborador como argumento
                 onClick={() => aoDeletar(id)}
             />
             <div className='colaborador__cabecalho' style={{backgroundColor: corDeFundo}}>
