@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Times.css'
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
@@ -287,17 +288,21 @@ function App() {
                 times={times.map(time => time.nome)}
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
-            {times.map(time => (
-                <Time 
-                    key={time.nome}
-                    time={time}
-                    colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-                    // Passa a função 'deletarColaborador' como uma propriedade chamada 'aoDeletar' para o componente 'Time'
-                    aoDeletar={deletarColaborador}
-                    // Passa a função 'mudarCorDoTime' como uma propriedade chamada 'mudarCor' para o componente 'Time'
-                    mudarCor={mudarCorDoTime}
-                />
-            ))}
+            <section className='times'>
+                <h2 className='times__titulo'>Minha Organização:</h2>
+                <div className='times__sublinhado'></div>
+                {times.map(time => (
+                    <Time 
+                        key={time.nome}
+                        time={time}
+                        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+                        // Passa a função 'deletarColaborador' como uma propriedade chamada 'aoDeletar' para o componente 'Time'
+                        aoDeletar={deletarColaborador}
+                        // Passa a função 'mudarCorDoTime' como uma propriedade chamada 'mudarCor' para o componente 'Time'
+                        mudarCor={mudarCorDoTime}
+                    />
+                ))}
+            </section>
             <Rodape />
         </div>
     );
