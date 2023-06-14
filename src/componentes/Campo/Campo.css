@@ -1,9 +1,9 @@
-.campo-texto {
+.campo {
     color: #212121;
     margin-bottom: 1.5rem;
 }
 
-.campo-texto__label {
+.campo__label {
     display: block;
     font-family: var(--fonte-texto);
     font-size: 1.125rem;
@@ -12,7 +12,7 @@
     margin-bottom: 0.5rem;
 }
 
-.campo-texto__input {
+.campo__input {
     border: none;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
@@ -23,12 +23,12 @@
     width: 100%;
 }
 
-.campo-texto__input::placeholder {
+.campo__input::placeholder {
     color: #AFAFAF;
 }
 
 @media screen and (max-width: 768px) {
-    .campo-texto__input {
+    .campo__input {
         padding: 1.5rem 1rem;
     }
 }
