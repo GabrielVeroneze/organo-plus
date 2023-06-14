@@ -281,12 +281,15 @@ function App() {
         )
     }
 
+    // Recebe como parâmetro um objeto contendo as informações do novo time a ser cadastrado
     function cadastrarTime(novoTime) {
         setTimes([
+            // Utiliza o operador spread para copiar todos os objetos do array 'times' atual
             ...times,
+            //  Adiciona um novo objeto de time
             {
-                id: uuidv4(),
-                ...novoTime
+                id: uuidv4(), // Adiciona a propriedade 'id' para garantir que o novo time tenha um identificador único
+                ...novoTime   // Utiliza o operador spread para copiar todas as propriedades do objeto 'novoTime' para o novo objeto de time
             }
         ])
     }
