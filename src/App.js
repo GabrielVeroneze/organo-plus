@@ -251,7 +251,13 @@ function App() {
     const [colaboradores, setColaboradores] = useState(inicial) // usa um array vazio como valor inicial
 
     function aoNovoColaboradorCadastrado(colaborador) {
-        setColaboradores([...colaboradores, colaborador])
+        setColaboradores([
+            ...colaboradores,
+            {
+                id: uuidv4(),
+                ...colaborador
+            }
+        ])
     }
 
     // Recebe como parâmetro o 'id' do colaborador que deve ser removido
