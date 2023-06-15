@@ -12,7 +12,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
     const [time, setTime] = useState('')
 
     const [nomeTime, setNomeTime] = useState('')
-    const [corTime, setCorTime] = useState('')
+    const [corTime, setCorTime] = useState('#000000')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
@@ -40,7 +40,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
         })
         // Os estados 'nomeTime' e 'corTime' são resetados para seus valores iniciais, limpando os campos do formulário 
         setNomeTime('')
-        setCorTime('')
+        setCorTime('#000000')
     }
 
     return (
