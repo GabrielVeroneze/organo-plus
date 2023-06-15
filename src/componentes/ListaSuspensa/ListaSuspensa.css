@@ -20,6 +20,7 @@
     border: none;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     box-sizing: border-box;
+    cursor: pointer;
     font-family: var(--fonte-texto);
     font-size: 1rem;
     line-height: 20px;

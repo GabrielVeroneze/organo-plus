@@ -32,6 +32,7 @@
 
 .campo__input--color {
     background-color: #ffffff;
+    cursor: pointer;
     height: 40px;
     padding: 0.3125rem 1.375rem;
 }
