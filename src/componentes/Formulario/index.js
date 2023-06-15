@@ -89,6 +89,7 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
                 />
                 <Campo
                     obrigatorio
+                    // Passa como props o tipo do <input> para o componente 'Campo', criando um campo de entrada específico para seleção de cores
                     type='color'
                     label='Cor'
                     placeholder='Digite a cor do time'
