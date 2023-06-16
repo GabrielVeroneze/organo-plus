@@ -2,7 +2,9 @@
     background-color: #FFFFFF;
     border-radius: 10px; 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
-    font-family: var(--fonte-texto);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-texto);;
     position: relative;
     width: 262px;
 }
@@ -30,6 +32,9 @@
 }
 
 .colaborador__rodape {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100%;
     padding: 4.3125rem 1.875rem 1.625rem;
 }
 
@@ -47,4 +52,8 @@
     font-weight: 400;
     line-height: 20px;
     margin: 0;
+}
+
+.colaborador__favoritar {
+    margin-top: 1.125rem;
 }
