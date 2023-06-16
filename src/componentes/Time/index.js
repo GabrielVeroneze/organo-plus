@@ -35,6 +35,7 @@ const Time = ({time, colaboradores, aoDeletar, mudarCor, aoFavoritar}) => {
                                 corDeFundo={time.cor}
                                 // A propriedade é usada para passar a referência da função 'aoDeletar' para cada instância do componente 'Colaborador'
                                 aoDeletar={aoDeletar}
+                                // A propriedade é usada para passar a referência da função 'aoFavoritar' para cada instância do componente 'Colaborador'
                                 aoFavoritar={aoFavoritar}
                             />
                         ) 

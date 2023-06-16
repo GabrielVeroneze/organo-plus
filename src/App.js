@@ -52,6 +52,7 @@ function App() {
         {
             // Atribui um identificador único gerado pela função 'uuidv4()' na propriedade 'id' do objeto 
             id: uuidv4(),
+            // Ao definir favorito: false, estamos indicando que o colaborador não é inicialmente considerado como favorito
             favorito: false,
             nome: 'Juliana Amoasei',
             cargo: 'Desenvolvedora de software e instrutora',
@@ -328,13 +329,17 @@ function App() {
         ])
     }
 
+    // Recebe como parâmetro um id, que é o 'id' do colaborador cujo status de favorito será alterado
     function definirFavorito(id) {
-
         setColaboradores(
+            // Itera sobre o array de 'colaboradores' e retorna um novo array com as modificações aplicadas    
             colaboradores.map(colaborador => {
+                // Para cada colaborador, é verificado se o seu 'id' é igual ao 'id' fornecido como argumento
                 if(colaborador.id === id) {
+                    // Se houver correspondência, altera o valor do atributo 'favorito' do colaborador, invertendo-o entre true e false
                     colaborador.favorito = !colaborador.favorito
                 }
+                // Retorna o array de colaboradores atualizado, com o status de favorito modificado para o colaborador específico
                 return colaborador
             })
         )        
@@ -360,6 +365,7 @@ function App() {
                         aoDeletar={deletarColaborador}
                         // Passa a função 'mudarCorDoTime' como uma propriedade chamada 'mudarCor' para o componente 'Time'
                         mudarCor={mudarCorDoTime}
+                        // Passa a função 'definirFavorito' como uma propriedade chamada 'aoFavoritar' para o componente 'Time'
                         aoFavoritar={definirFavorito}
                     />
                 ))}
