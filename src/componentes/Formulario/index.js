@@ -28,17 +28,14 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
         setTime('')
     }
 
-    // A função 'aoSalvarTime' é chamada quando o formulário de criação de um novo time for enviado
     const aoSalvarTime = (evento) => {
         evento.preventDefault()
 
-        // A função 'cadastrarTime' passada como props, é responsável por adicionar um novo time à lista de times existentes
         cadastrarTime({
-            // Passa um objeto com as propriedades 'nome' e 'cor', essas propriedades são obtidas dos estados 'nomeTime' e 'corTime', respectivamente
             nome: nomeTime,
             cor: corTime
         })
-        // Os estados 'nomeTime' e 'corTime' são resetados para seus valores iniciais, limpando os campos do formulário 
+
         setNomeTime('')
         setCorTime('#000000')
     }
@@ -89,7 +86,6 @@ const Formulario = ({ aoCadastrar, times, cadastrarTime }) => {
                 />
                 <Campo
                     obrigatorio
-                    // Passa como props o tipo do <input> para o componente 'Campo', criando um campo de entrada específico para seleção de cores
                     type='color'
                     label='Cor'
                     placeholder='Digite a cor do time'
