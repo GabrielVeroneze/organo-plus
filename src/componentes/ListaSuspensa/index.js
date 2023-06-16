@@ -1,4 +1,5 @@
 import './ListaSuspensa.css'
+import { v4 as uuidv4 } from 'uuid';
 
 const ListaSuspensa = (props) => {
 
@@ -17,7 +18,7 @@ const ListaSuspensa = (props) => {
             >
                 <option value=""></option>
                 {props.itens.map(item => (
-                    <option key={item}>{item}</option>
+                    <option key={uuidv4()}>{item}</option>
                 ))}
             </select>
         </div>
