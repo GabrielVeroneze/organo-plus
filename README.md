@@ -4,7 +4,7 @@
 <hr>
 
 <h1 align="center">Organo Plus</h1>
-<p align="center">O Organo Plus é uma versão aprimorada da aplicação [Organo](https://github.com/GabrielVeroneze/organo). Ele mantém todas as funcionalidades do Organo original, proporcionando uma experiência aprimorada e adicionando recursos adicionais para melhorar a interatividade e a personalização da aplicação.</p>
+<p align="center">O Organo Plus é uma versão aprimorada da aplicação <a href="https://github.com/GabrielVeroneze/organo">Organo</a>. Ele mantém todas as funcionalidades do Organo original, proporcionando uma experiência aprimorada e adicionando recursos adicionais para melhorar a interatividade e a personalização da aplicação.</p>
 
 ## :hammer: Funcionalidades da aplicação
 
