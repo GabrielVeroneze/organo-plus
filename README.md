@@ -1,20 +1,20 @@
-<p align="center"> <img src="https://imgur.com/4b57aFn.png" alt="React: desenvolvendo com JavaScript"> </p>
-<p>Projeto desenvolvido durante o curso "React: desenvolvendo com JavaScript" da Alura.</p>
+<p align="center"> <img src="https://imgur.com/KuVvd8J.png" alt="React: como os componentes funcionam"> </p>
+<p>Projeto desenvolvido durante o curso "React: como os componentes funcionam" da Alura.</p>
 
 <hr>
 
-<h1 align="center">Organo</h1>
-<p align="center">A aplicação Organo é um organograma interativo desenvolvido em React. Desenvolvido especificamente para uma escola de cursos online, a aplicação fornece uma representação visual clara e hierárquica da estrutura de colaboradores da escola, organizando-os por times categorizados em áreas de especialização.</p>
+<h1 align="center">Organo Plus</h1>
+<p align="center">O Organo Plus é uma versão aprimorada da aplicação [Organo](https://github.com/GabrielVeroneze/organo). Ele mantém todas as funcionalidades do Organo original, proporcionando uma experiência aprimorada e adicionando recursos adicionais para melhorar a interatividade e a personalização da aplicação.</p>
 
 ## :hammer: Funcionalidades da aplicação
 
-- `Criação de card do colaborador`: Cria um card de colaborador com as informações fornecidas no formulário, como nome, cargo, imagem e time. Tornando o card visualmente identificável e personalizado.
+- `Mudança de cor dos times`: Agora é possível personalizar as cores dos times de forma flexível, permitindo que os usuários adaptem o organograma de acordo com suas preferências visuais ou para melhor representar diferentes times.
 
-- `Upload de imagem`: Possui a opção de fazer o upload da imagem do colaborador diretamente pelo formulário.
+- `Criação de novos times`: Os usuários podem criar novos times de forma intuitiva e simples. Ao criar um novo time, é possível selecionar uma cor específica para diferenciá-lo dos demais.
 
-- `Seleção de time`: Oferece uma lista de opções de times, como programação, Front-end, Data Science, DevOps, UX e Design, Mobile e Inovação e gestão.
+- `Exclusão de colaboradores`: Agora os usuários têm a opção de excluir colaboradores diretamente. Essa funcionalidade permite a remoção rápida e eficiente de colaboradores que não fazem mais parte do time ou que tenham sido realocados para outras equipes.
 
-- `Adição do card ao organograma`: Após a criação do card do colaborador, ele é adicionado automaticamente ao organograma, no local correspondente ao seu time.
+- `Favoritar colaboradores`: Os usuários agora têm a opção de favoritar colaboradores específicos, destacando-os. Essa funcionalidade é útil para identificar membros-chave da equipe ou colaboradores com um desempenho excepcional.
 
 ## :computer: Tecnologias e Ferramentas utilizadas
 
@@ -22,9 +22,9 @@
  ------------------------- | ---------------- | ----------------------
 `children`                 | `Flexbox`        | `Node Package Manager`
 `Componentes Controlados`  | `Media Queries`  | `create-react-app`
-`Componentes Funcionais`   | `Pseudoclasses`  |
-`Desestruturação de Props` | `Responsividade` |
-`Eventos`                  | `Variáveis`      |
+`Componentes Funcionais`   | `Pseudoclasses`  | `hex-to-rgba`
+`Desestruturação de Props` | `Responsividade` | `react-icons`
+`Eventos`                  | `Variáveis`      | `uuid`
 `Hooks`                    | `...`            |
 `JSX`                      |                  |
 `Props`                    |                  |
@@ -35,11 +35,11 @@
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
-[Baixar código fonte](https://github.com/GabrielVeroneze/organo/archive/refs/heads/master.zip)
+[Baixar código fonte](https://github.com/GabrielVeroneze/organo-plus/archive/refs/heads/master.zip)
 
 Também é possível clonar o repositório usando o seguinte comando:
 ```
-git clone https://github.com/GabrielVeroneze/organo.git
+git clone https://github.com/GabrielVeroneze/organo-plus.git
 ```
 
 ## :clipboard: Instruções
