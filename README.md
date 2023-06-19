@@ -65,11 +65,14 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 <br>
 
 ## Demonstração Visual
-`Formulário`
-![Organo](https://imgur.com/fjCFeFY.png)
+`Alterando cor dos times`
+![Organo Plus](https://imgur.com/OJuw0pg.gif)
 
-`Seção de Colaboradores`
-![Organo](https://imgur.com/gapXooK.png)
+`Adicionando novo time`
+![Organo Plus](https://imgur.com/lN0XY5m.gif)
 
-`Criando Colaborador`
-![Organo](https://imgur.com/F2xf4SZ.gif)
+`Excluindo colaborador`
+![Organo Plus](https://imgur.com/HLYf1ma.gif)
+
+`Favoritando colaborador`
+![Organo Plus](https://imgur.com/SCd2R4T.gif)
