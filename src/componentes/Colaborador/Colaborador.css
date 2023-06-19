@@ -10,6 +10,7 @@
 }
 
 .colaborador__deletar {
+    cursor: pointer;
     height: 32px;
     position: absolute;
     right: -10px;
@@ -55,5 +56,6 @@
 }
 
 .colaborador__favoritar {
+    cursor: pointer;
     margin-top: 1.125rem;
 }
