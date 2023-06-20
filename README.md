@@ -66,13 +66,13 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 
 ## Demonstração Visual
 `Alterando cor dos times`
-![Organo Plus](https://imgur.com/OJuw0pg.gif)
+![Organo Plus](https://imgur.com/AtGwz7i.gif)
 
 `Adicionando novo time`
-![Organo Plus](https://imgur.com/lN0XY5m.gif)
+![Organo Plus](https://imgur.com/mLqsGfB.gif)
 
 `Excluindo colaborador`
 ![Organo Plus](https://imgur.com/HLYf1ma.gif)
 
 `Favoritando colaborador`
-![Organo Plus](https://imgur.com/SCd2R4T.gif)
+![Organo Plus](https://imgur.com/mCEaW3g.gif)
