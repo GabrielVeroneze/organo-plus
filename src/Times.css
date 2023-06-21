@@ -1,3 +1,20 @@
+.times {
+    margin-top: 2rem;
+}
+
+.times__cabecalho {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: repeat(2, max-content);
+    margin: 0 5rem;
+}
+
+.times__wrapper {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin-left: 82px;
+}
+
 .times__titulo {
     color: #6278F7;
     font-family: var(--fonte-titulo);
@@ -13,4 +30,21 @@
     height: 4px;
     margin: 0 auto 5rem;
     width: 64px;
+}
+
+@media screen and (max-width: 768px) {
+    .times__cabecalho {
+        justify-items: center;
+        margin: 0 1rem;
+    }
+
+    .times__wrapper {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin: 0;
+    }
+
+    .times__titulo {
+        font-size: 2rem;
+    }
 }
