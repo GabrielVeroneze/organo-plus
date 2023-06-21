@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './Times.css'
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
 import Rodape from './componentes/Rodape';
-import { v4 as uuidv4 } from 'uuid';
+import BotaoOcultar from './componentes/BotaoOcultar';
 
 function App() {
 
@@ -206,8 +207,13 @@ function App() {
                 aoCadastrar={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
             />
             <section className='times'>
-                <h2 className='times__titulo'>Minha Organização:</h2>
-                <div className='times__sublinhado'></div>
+                <div className='times__cabecalho'>
+                    <div className='times__wrapper'>
+                        <h2 className='times__titulo'>Minha Organização:</h2>
+                        <div className='times__sublinhado'></div>
+                    </div>
+                    <BotaoOcultar />
+                </div>
                 {times.map(time => (
                     <Time 
                         key={time.id}
