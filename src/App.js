@@ -148,6 +148,8 @@ function App() {
 
     const [colaboradores, setColaboradores] = useState(inicial)
 
+    const [exibirFormulario, setExibirFormulario] = useState(true)
+
     function aoNovoColaboradorCadastrado(colaborador) {
         setColaboradores([
             ...colaboradores,
@@ -198,21 +200,27 @@ function App() {
         )        
     }
     
+    function alterarVisibilidade() {
+        setExibirFormulario(!exibirFormulario)
+    }
+
     return (
         <div className="App">
             <Banner />
-            <Formulario
-                cadastrarTime={cadastrarTime}
-                times={times.map(time => time.nome)}
-                aoCadastrar={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
-            />
+            {exibirFormulario && (
+                <Formulario
+                    cadastrarTime={cadastrarTime}
+                    times={times.map(time => time.nome)}
+                    aoCadastrar={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}
+                />
+            )}
             <section className='times'>
                 <div className='times__cabecalho'>
                     <div className='times__wrapper'>
                         <h2 className='times__titulo'>Minha Organização:</h2>
                         <div className='times__sublinhado'></div>
                     </div>
-                    <BotaoOcultar />
+                    <BotaoOcultar alterarVisibilidade={alterarVisibilidade}/>
                 </div>
                 {times.map(time => (
                     <Time 
